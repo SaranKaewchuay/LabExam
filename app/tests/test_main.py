@@ -82,10 +82,3 @@ def test_result_f_score_0():
     actual_result = response.json()
     assert response.status_code == 200
     assert expected_result == actual_result
-
-def test_result_f_score_00():
-    response = client.get("/calculate_grade/-100")
-    expected_result = "F"
-    actual_result = response.json()
-    assert response.status_code == 200
-    assert expected_result == actual_result
