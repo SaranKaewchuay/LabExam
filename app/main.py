@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "LabExam"}
 
 @app.get('/calculate_grade/{score}')
 def calculate_grade_api(score:int):
